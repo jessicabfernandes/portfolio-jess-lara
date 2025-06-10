@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- BOOTSTRAP -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+  <!-- AOS -->
+  <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
+
+  <!-- FavIcon -->
+  <link rel="icon" href="assets/img/favicon.ico" />
+
+  <title>Jessica Lara - Portfólio</title>
+</head>
+
+<body>
+  <header>
+    <div class="header fixed-top">
+      <div class="skip-to-main">
+        <a href="#content" tabindex="1">Pular para conteúdo principal</a>
+      </div>
+
+      <div class="container d-flex align-items-center justify-content-between position-relative gap-2">
+        <div class="lang d-flex align-items-center gap-2 pe-lg-3">
+          <a href="index.html"><img src="assets/img/pt.png" alt="" /></a>
+          <a href="#" class="active"><img src="assets/img/ingles.png" alt="" /></a>
+        </div>
+        <a class="navbar-brand" href="index-us.html">
+          <img data-aos="fade" alt="Ir para pagina inicial" src="assets/img/logo.svg" />
+        </a>
+
+        <div class="d-flex align-items-center justify-content-end">
+          <nav class="navbar navbar-expand-md" aria-label="Menu lateral">
+            <button class="navbar-toggler justify-content-end ms-auto" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+              aria-label="Mostrar/Esconder navegação">
+              <span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                  class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                  </path>
+                </svg>
+              </span>
+            </button>
+
+            <div class="offcanvas offcanvas-end flex-column flex-md-row align-items-md-end justify-content-md-between"
+              id="offcanvasNavbar" data-bs-scroll="true">
+              <div class="offcanvas-header pt-5" data-bs-theme="dark">
+                <a class="logo-offcanvas pe-3" href="index.html">
+                  <img class="img-fluid" alt="Ir para pagina inicial" src="assets/img/logo.svg" />
+                </a>
+                <button type="button" class="btn-close me-4" style="opacity: 1" data-bs-dismiss="offcanvas"
+                  aria-label="Fechar"></button>
+              </div>
+
+              <div class="offcanvas-body align-items-center">
+                <ul class="navbar-nav my-2 my-lg-0 align-items-start gap-2 gap-md-4">
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="position-relative" id="content" data-bs-offset="15" class="scrollspy-example" data-bs-spy="scroll"
+    data-bs-target="#offcanvasNavbar" data-bs-smooth-scroll="true" tabindex="0">
+    <!-- MAIN -->
+    <section class="hero">
+      <div class="bg-circle rellax" data-rellax-speed="2"><img data-aos="zoom-out" src="assets/img/bg-bubbles.png" alt="" /></div>
+      <div class="bg-lines rellax" data-rellax-speed="-2"><img data-aos="zoom-in" src="assets/img/bg-lines.png" alt="" /></div>
+
+      <div class="container position-relative z-1">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="zoom-in-right">
+            <h1 class="highlight-text title">Front-end <br> Developer & <br />UI Designer</h1>
+            <p class="text-hero mt-md-5 mt-3">I transform ideas into modern, responsive, and accessible digital
+              interfaces.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade">
+            <iframe src="https://lottie.host/embed/3c33c8ce-2ff9-4294-afc3-f21e00c500b9/LbA4UzjCsF.lottie"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about position-relative" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="title-section title mb-4" data-aos="zoom-in-right">About me</h2>
+            <div data-aos="fade-up">
+              <p>
+                I specialize in building responsive, accessible and high-performance interfaces using technologies like
+                HTML, CSS, JavaScript, and Bootstrap.
+              </p>
+              <p>
+                Since 2023, I’ve been deepening my knowledge in user-centered design, improving my skills in tools like
+                Figma and applying design systems and usability principles to elevate front-end projects.
+              </p>
+              <p>
+                With a background in design and a strong eye for detail, I’m passionate about crafting digital
+                experiences
+                that are not only functional, but also visually intuitive and inclusive.
+              </p>
+              <p>
+                I'm currently focused on bridging the gap between code and design, combining development efficiency with
+                thoughtful UI/UX practices.
+              </p>
+              <p><strong>Let’s build something beautiful and accessible together.</strong></p>
+
+            </div>
+            <div class="d-flex justify-content-center mt-5" data-aos="fade">
+              <a href="#contact" class="btn-solid" download>
+                <span>Contact Me</span>
+                <i class="fa-regular fa-message icon"></i>
+              </a>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img data-aos="zoom-out" data-aos-offset="400" class="img-fluid" src="assets/img/about-img.png" alt="imagem cartoon Jessica" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-xl-7">
+            <div class="card-experience" data-aos="fade-up-right">
+              <div class="card-experience-content">
+                <h2 class="title sub-title">Experience</h2>
+
+                <div>
+                  <h3 class="text-highlight">
+                    Frontend Web Developer
+                  </h3>
+                  <p>Netpixel Tecnologia</p>
+                  <ul>
+                    <li>Developed responsive web applications using JavaScript, HTML, and CSS with a focus on usability
+                      and performance.</li>
+                    <li>Built high-fidelity interfaces based on Figma layouts.</li>
+                    <li>Applied UI/UX practices to improve usability and accessibility.</li>
+                    <li>Collaborated with cross-functional teams in agile environments to test and review interfaces.
+                    </li>
+                    <li>Actively participated in UX/UI discussions and reusable component design.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 class="text-highlight">
+                    Web Designer (Landing Pages & WordPress)
+                  </h3>
+                  <p>LuckBet</p>
+                  <ul>
+                    <li>Created and maintained landing pages focused on lead generation and performance.</li>
+                    <li>Developed WordPress pages using custom themes and reusable components.</li>
+                    <li>Applied UX/UI best practices to improve conversion rates and engagement.</li>
+                    <li>Integrated marketing and analytics tools to optimize digital performance.</li>
+                    <li>Collaborated with tech and marketing teams in an agile environment.</li>
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5 d-flex flex-column justify-content-between gap-4">
+            <div class="card-experience" data-aos="fade-up-left" data-aos-offset="400"
+              style="animation-direction: reverse; animation-delay: 2s;">
+              <div class="card-experience-content">
+                <h2 class="title sub-title">Academic Background</h2>
+
+                <div>
+                  <h3 class="text-highlight">
+                    Fashion Design – 2011 a 2013
+                  </h3>
+                  <p>Unic – Universidade de Cuiabá</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-experience" data-aos="fade-up-left" style="animation-delay: 2s;">
+              <div class="card-experience-content">
+                <h2 class="title sub-title">Courses & Certifications</h2>
+
+                <div>
+                  <ul>
+                    <li><strong>UI Design with Figma: From Beginner to Expert</strong> – Udemy (2025)</li>
+                    <li><strong>UI Design – User Interface Design</strong> – Udemy (2025)</li>
+                    <li><strong>JavaScript Algorithms and Data Structures</strong> – FreeCodeCamp (2024)</li>
+                    <li><strong>Front-End Development Libraries</strong> – FreeCodeCamp (2024)</li>
+                    <li><strong>Responsive Web Design</strong> – FreeCodeCamp (2024)</li>
+                    <li><strong>Complete Web Development</strong> – Udemy (2022)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="title-section title mb-5 text-center" data-aos="zoom-in-right">Skills</h2>
+
+        <div class="col-lg-7 mx-auto mb-7" data-aos="fade-up">
+          <h3 class="title sub-title text-center">Front-End</h3>
+
+          <div class="d-flex flex-wrap mt-4 gap-3 justify-content-center">
+            <span class="tag">html5</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JAVASCRIPT</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">SASS</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Basic SEO</span>
+            <span class="tag">Web Accessibility (WCAG)</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7 mx-auto mb-7" data-aos="fade-up">
+          <h3 class="title sub-title text-center">UI Design</h3>
+
+          <div class="d-flex flex-wrap mt-4 gap-3 justify-content-center">
+            <span class="tag">Figma</span>
+            <span class="tag">Design System</span>
+            <span class="tag">Visual Organization</span>
+            <span class="tag">Layout</span>
+            <span class="tag">Spacing</span>
+            <span class="tag">Style Guides</span>
+            <span class="tag">Design responsivo</span>
+            <span class="tag">Responsive Interfaces</span>
+            <span class="tag">Typography</span>
+            <span class="tag">Color Theory</span>
+            <span class="tag">Prototyping </span>
+            <span class="tag">Wireframing</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7 mx-auto " data-aos="fade-up">
+          <h3 class="title sub-title text-center">Soft Skills and Extras</h3>
+
+          <div class="d-flex flex-wrap mt-4 gap-3 justify-content-center">
+            <span class="tag">Communication</span>
+            <span class="tag">Proactivity</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Collaboration</span>
+            <span class="tag">Intermediate English</span>
+            <span class="tag">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container"  data-aos="fade">
+        <h2 class="title-section title mb-5 text-center">Contact Me </h2>
+        <div>
+          <div class="d-flex align-items-center justify-content-center gap-4 contact-list">
+            <a href="https://www.linkedin.com/in/jessicaflara/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.behance.net/jessicafernand126" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            <a href="mailto:jessicablfernandes@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+
+          <div class="d-flex justify-content-center mt-5">
+            <a href="assets/pdf/CV_Jessica_Lara_EN.pdf" class="btn-solid" download>
+              <span>Download CV</span>
+              <svg class="icon-download" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path d="M12 16l4-5h-3V4h-2v7H8z" />
+                <path d="M20 18H4v-2H2v4h20v-4h-2z" />
+              </svg>
+            </a>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer mt-6 pt-3">
+        <div
+          class="container d-flex flex-column flex-lg-row align-items-center align-items-lg-end justify-content-lg-between gap-3">
+          <a href="#"><img class="img-fluid" src="assets/img/logo.svg" alt=""></a>
+
+          <span class="copyright text-center text-lg-end">
+            © 2025 - All rights reserved. Created and developed by Jéssica Lara.
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="node_modules/rellax/rellax.min.js"></script>
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

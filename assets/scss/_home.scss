@@ -1,0 +1,196 @@
+/******** HERO *********/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/bg-gradient.jpg) no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  margin: auto 0;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 1/1;
+    pointer-events: none;
+  }
+
+  @media (max-width: 992px) {
+    padding: 120px 10px 0 !important;
+
+    iframe {
+      margin-top: -30px;
+      margin-bottom: -50px;
+    }
+  }
+}
+
+.bg-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.bg-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.highlight-text {
+  font-size: 10rem;
+  line-height: calc(10 * 1.2rem);
+
+  @media (max-width: 1600px) {
+    font-size: 8rem;
+    line-height: calc(8 * 1.2rem);
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 6rem;
+    line-height: calc(6 * 1.2rem);
+  }
+
+  @media (max-width: 576px) {
+    font-size: 4rem;
+    line-height: calc(4 * 1.2rem);
+  }
+}
+
+.text-hero {
+  font-size: 3.6rem;
+  line-height: calc(3.6 * 1.2rem);
+
+  @media (max-width: 1200px) {
+    font-size: 2.8rem;
+    line-height: calc(2.4 * 1.2rem);
+  }
+}
+
+/******** ABOUT *********/
+.about {
+  background: url(../img/bg-gradient-2.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/******** EXPERIENCE *********/
+.experience {
+  background: url(../img/bg-gradient.jpg) no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+.card-experience {
+  margin: auto;
+  margin-right: 1px;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(var(--gradient-angle), $purple, $orange);
+  border-radius: 20px;
+  animation: rotation 4s linear 0s infinite normal forwards;
+  backdrop-filter: blur(50px);
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card-experience-content {
+  margin: 5px;
+  background-color: #080711;
+  border-radius: 15px;
+  transition: all 0.2s;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 40px 48px;
+  flex: 1;
+  height: -webkit-fill-available;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/******** SKILLS *********/
+
+.skills {
+  background: url(../img/bg-gradient-2.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.tag {
+  background: $purple;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: calc(2.2 * 1.2rem);
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 992px) {
+    font-size: 1.8rem;
+    line-height: calc(1.8 * 1.5rem);
+  }
+}
+
+/******** CONTACT / COPYRIGHT *********/
+.contact {
+  background: url(../img/bg-gradient.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-bottom: 16px;
+}
+
+.contact-list {
+  a {
+    color: #fff;
+    font-size: 4.5rem;
+    transition: 0.4s ease-in-out;
+    filter: drop-shadow(0px 1px 2px transparent);
+
+    &:hover {
+      color: $orange;
+      filter: drop-shadow(0px 1px 2px #ff6c52c9);
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}

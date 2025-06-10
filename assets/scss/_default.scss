@@ -1,0 +1,87 @@
+/******** DEFAULT *********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // declarar fontes 1.6rem para 16px
+  position: relative;
+  height: 100%;
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: calc(1.8 * 1.5rem);
+  color: $text;
+  overflow-x: clip;
+  background-color: #080711;
+
+  @media (max-width: 992px) {
+    font-size: 1.6rem;
+    line-height: calc(1.6 * 1.5rem);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #080711; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $orange; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid #080711; /* creates padding around scroll thumb */
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+:focus {
+  border: 1px solid $purple;
+}
+
+:target {
+  scroll-margin-top: 50px;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+li {
+  padding: 0;
+}
+
+p {
+  margin-bottom: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+section {
+  overflow-x: clip;
+}
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
