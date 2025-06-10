@@ -19,8 +19,8 @@ Este portfólio tem como principal objetivo:
 
 ## 🌐 Acesse o Portfólio
 
-Em breve estará disponível em:  
-[https://jesslara.github.io](https://jesslara.github.io) *(link será atualizado quando publicado)*
+Disponível em:  
+https://jessicabfernandes.github.io/portfolio-jess-lara/
 
 ## Como Usar
 
